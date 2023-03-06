@@ -1,0 +1,356 @@
+
+
+html{
+    box-sizing:
+    *,*::before,
+    *::after
+        box-sizing: inherit;
+    ;
+}
+
+
+/*=================================================скидання базових стилів============================================= */
+.link {
+    text-decoration: none;
+}
+
+
+.list {
+    list-style: none;
+}
+
+button{ 
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul, ol{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img{
+    display: block;
+}
+
+/*===================================================== hader===================================================== */
+
+/* nav */
+
+:root {
+    --primaru-brand-color: #4D5AE5;
+
+    --pressed-state-color: #404BBF;
+    --dark-color: #2E2F42;
+    --text-color: #434455;
+    --text-footer-color: #E7E9FC;
+    --subtle-text-color: #FFFFFF;
+    --light-color: #F4F4FD;
+}
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+   
+}
+
+.container{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.page-header-container {
+    display: flex;
+}
+
+.page-nav{ 
+    display: flex;
+}
+
+.list{ 
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    
+   
+}
+
+.logo-right{
+    margin-right: 76px;
+}
+
+.menu-item:not(:last-child){
+    margin-right: 40px;
+}
+
+
+
+
+.text {
+    font-family: 'Roboto', 'sens-serif';
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.logo-left {
+    font-family: 'Raleway', 'sens-serif';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--pressed-state-color);
+}
+
+.logo-right {
+    font-family: 'Raleway', 'sens-serif';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--dark-color);
+}
+
+
+.menu-link {
+    font-family: 'Roboto', 'sens-serif';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark-color)
+}
+
+.menu-link:active,
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--pressed-state-color);
+}
+
+
+
+/* =====================================================adress===================================================== */
+.addres{
+    margin-left: auto;
+}
+
+.contact-mail {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.contact-phone-number {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+/*===================================================== section 1 hero =====================================================*/
+.hero-color{
+    text-align: center;
+    background-color: var(--dark-color);
+    width: 1230px;
+    margin-left: auto;
+        margin-right: auto;
+}
+.main-title {
+       font-family: 'Roboto', 'sens-serif';
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--subtle-text-color);
+}
+
+.modal-btn {
+    display: inline-block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 32px ;
+    padding-right: 32px;
+    border: 1px;
+    border-radius: 4px;
+    font-family: 'Roboto', 'sens-serif';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--subtle-text-color);
+    background-color: var(--primaru-brand-color);
+   
+
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--pressed-state-color);
+}
+
+/* =====================================================section 2 =====================================================*/
+
+.course{
+    column-gap: 24px;
+}
+.title-secondaru {
+    font-family: 'Roboto', 'sens-serif';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
+
+.title-third {
+    margin-bottom: 8px;
+    font-family: 'Roboto', 'sens-serif';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+}
+/* =====================================================section 3 =====================================================*/
+.what-are-we-doing-section {
+        background-color: var(--subtle-text-color);
+}
+ .list-card:not(:nth-child(3n)){
+    margin-right: 24px;
+flex-basis: calc((100%-2*24px)/3)
+ }
+ 
+/* =====================================================section 4 =====================================================*/
+.section-four{
+    background-color: var(--light-color);
+    /* padding-left: 15px;
+        padding-right: 15px; */
+}
+.text-card{
+    margin-bottom: 32px;
+    
+}
+
+
+.container-team:not(:nth-child(3n)){
+    margin-right: 24px;
+ flex-basis: calc((100%-2*24px)/3)
+
+}
+
+.team{
+    column-gap: 24px;
+flex-basis: calc((100%-2*24px)/4)}
+/* =====================================================footer =====================================================*/
+
+.text-footer {
+    font-family: 'Roboto', 'sens-serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-footer-color);
+}
+
+.logo-right-footer {
+    color: var(--subtle-text-color)
+
+}
+
+.footer-color{
+    background-color: var(--dark-color);
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+}
+      
+
+
+
+/*===================================================== page portfolio===================================================== */
+
+.wrapper-btn{
+    justify-content: center;
+      
+}
+.menu-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.struktur-link {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: 'Roboto', 'sens-serif';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--primaru-brand-color);
+    border 1px solid: var(--light-color);
+    border-radius: 4px;
+    border-color:var(--text-footer-color);
+   margin-bottom: 72px;
+    margin-right: 24px;
+  
+}
+.struktur-link:not(:last-child){
+margin-right: 24px;
+}
+
+.struktur-link:hover,
+.struktur-link:focus {
+    color: var(--subtle-text-color);
+    background-color: var(--pressed-state-color);
+}
+
+.portfolio-img-pad{
+    margin-bottom: 120px;
+}
+.portfolio-card{
+flex-basis: calc((100%-2*24px)/3);
+  column-gap: 24px;
+  row-gap: 48px;
+flex-wrap: wrap;
+}
+.portfolio-card-content-wrapper{
+
+    border: 1px solid var(--text-footer-color);
+    padding-top: 32px;
+background-color: var(--subtle-text-color);
+
+}
+.title-two {
+    margin-bottom: 8px;
+    font-family: 'Roboto', 'sens-serif';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--dark-color);
+    
+}
+
+ 

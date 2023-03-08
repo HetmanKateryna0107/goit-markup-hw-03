@@ -50,6 +50,7 @@ img{
     --subtle-text-color: #FFFFFF;
     --light-color: #F4F4FD;
 }
+
 .section{
     padding-top: 120px;
     padding-bottom: 120px;
@@ -67,11 +68,19 @@ img{
 .page-header{
     padding-top: 24px;
     padding-bottom: 24px;
+  
 }
 .page-header-container {
     display: flex;
-}
+  
+ 
 
+    
+}
+.box{
+    border-bottom: 1px solid var(--text-footer-color);
+    padding-bottom: 25px;
+   }
 .page-nav{ 
     display: flex;
 }
@@ -110,6 +119,7 @@ img{
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--pressed-state-color);
+ 
 }
 
 .logo-right {
@@ -174,8 +184,8 @@ img{
         margin-right: auto;
         padding-top: 188px;
         padding-bottom: 188px;
-        padding-left: 472px;
-        padding-right: 472px;
+        padding-left: 0;
+        padding-right: 0;
         width: 1440px;
 }
 .main-title {
@@ -185,8 +195,11 @@ img{
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--subtle-text-color);
-
+    width: 496px;
+margin-left: auto;
+margin-right: auto;
 }
+
 
 .modal-btn {
     display: inline-block;
@@ -228,6 +241,7 @@ img{
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: var(--dark-color);
+    margin-bottom: 72px;
 
 }
 
@@ -241,13 +255,14 @@ img{
     color: var(--dark-color);
 }
 /* =====================================================section 3 =====================================================*/
-.retreat{
-    padding-bottom: 72px;
-}
+
 .remove-retreat {
     padding-top: 0;
+   
 }
+
 .what-are-we-doing-section {
+  
         background-color: var(--subtle-text-color);
 }
  .list-card:not(:nth-child(3n)){
@@ -260,18 +275,15 @@ flex-basis: calc((100%-2*24px)/3)
     background-color: var(--light-color);
     margin-left: auto;
     margin-right: auto;
-     width: 1440px;
-    padding-left: 156px;
-    padding-right: 156px;;
- 
+  
 }
 
 
-.container-team:not(:nth-child(3n)){
+/* .container-team:not(:nth-child(3n)){
     margin-right: 24px;
  flex-basis: calc((100%-2*24px)/3)
 
-}
+} */
 
 .team{
     column-gap: 24px;
@@ -285,24 +297,31 @@ flex-basis: calc((100%-2*24px)/4)}
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-footer-color);
+    width: 264px;
     
+    
+}
+.entrance{
+    margin-bottom: 17px;
+    display: block;
 }
 
 .logo-right-footer {
-    color: var(--subtle-text-color)
+    color: var(--subtle-text-color);
+  
 
 }
 
 .footer-color{
     background-color: var(--dark-color);
+      padding-top: 100px;
+     padding-bottom: 100px;
     width: 1440px;
     margin-left: auto;
-    margin-right: auto;
-    padding-top: 101.5px;
-     padding-bottom: 100px;
-    padding-left: 156px;
-        padding-right: 1020px;
-}
+        margin-right: auto;
+     
+    }
+} 
       
 
 
@@ -311,7 +330,8 @@ flex-basis: calc((100%-2*24px)/4)}
 
 .wrapper-btn{
     justify-content: center;
-      
+    padding-top: 96px;
+        padding-bottom: 72px;
 }
 .menu-item:not(:last-child) {
     margin-right: 40px;
@@ -331,12 +351,10 @@ flex-basis: calc((100%-2*24px)/4)}
     border: 1px solid: var(--light-color);
     border-radius: 4px;
     border-color:var(--text-footer-color);
-   /* margin-bottom: 72px;
-    margin-right: 24px;
-   */
+  
 }
 .btn-padding{
-    margin-bottom: 72px;
+  
         margin-right: 24px;
     
 }
@@ -351,7 +369,7 @@ margin-right: 0;
 }
 
 .portfolio-img-pad{
-    margin-bottom: 120px;
+   padding-bottom: 120px;
 }
 .portfolio-card{
 flex-basis: calc((100%-2*24px)/3);
@@ -365,6 +383,8 @@ flex-wrap: wrap;
     border-top: 0px;
     padding-top: 32px;
 background-color: var(--subtle-text-color);
+padding-left: 16px;
+padding-right: 16px;
 }
 .card-title{
     text-align: center;
